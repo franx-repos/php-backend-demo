@@ -1,0 +1,356 @@
+/**********************************/
+/********** BASIC STYLES **********/
+/**********************************/
+HTML {
+  box-sizing: border-box;
+}
+body {
+  font-family: verdana;
+  font-size: 16px;
+  /* box-sizing: border-box; */
+  padding: 1.5rem;
+  /* background-color: #212121; */
+  /* color: #fff; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* margin-top: 2em; */
+}
+
+h1 {
+  color: black;
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: dodgerblue;
+  letter-spacing: 0.05em;
+}
+
+h3,
+h4,
+h5 {
+  letter-spacing: 0.01em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+h4,
+h5 {
+  font-size: 1em;
+  color: gray;
+}
+h4 {
+  font-weight: bold;
+}
+
+p.small {
+  font-size: 0.7em;
+  color: gray;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: gray;
+}
+
+/******************************************/
+/********** HTML ELEMENTS STYLES **********/
+/******************************************/
+
+/********** COMMON FORMULAR STYLES **********/
+fieldset,
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 5px;
+  border: #000 0.1rem solid;
+  box-sizing: border-box;
+}
+fieldset {
+  margin-bottom: 1.5rem;
+
+  padding: 1rem;
+}
+fieldset fieldset {
+  width: 100%;
+  border: 1px solid gray;
+  margin-top: 1.5rem;
+  margin-left: 0;
+}
+select.day {
+  width: 75px;
+}
+select.month {
+  width: 100px;
+}
+select.year {
+  width: 75px;
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  font-family: verdana;
+}
+input[type="submit"] {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: dodgerblue;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+}
+input[type="submit"]:hover {
+  background-color: rgb(10, 99, 189);
+  color: #fff;
+}
+input[type="file"] {
+  margin: 0;
+}
+input.short {
+  width: 125px;
+}
+input::placeholder {
+  opacity: 0.9;
+  font-size: 0.9em;
+}
+
+/********** TABLES **********/
+table {
+  width: 100%;
+  font-family: courier new;
+  font-size: 0.9em;
+}
+table,
+td {
+  border: 1px solid teal;
+  border-collapse: collapse;
+}
+th {
+  background-color: lightblue;
+  padding: 10px;
+}
+td {
+  padding: 10px;
+  text-align: center;
+  color: teal;
+}
+td:last-child {
+  /* for future use */
+}
+tr:nth-child(even) {
+  background-color: #eee;
+}
+tr:hover {
+  background-color: #dee;
+}
+
+/*****************************/
+/********** CLASSES **********/
+/*****************************/
+
+/********** SPECIAL FORMULARS STYLES **********/
+header {
+  text-align: right;
+}
+form.login {
+  width: 40%;
+}
+.blog-content {
+  width: 60%;
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 0.2rem solid #797474;
+  border-radius: 0.5rem;
+}
+.blog-post {
+  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  border-bottom: 0.2rem dotted #797474;
+}
+.blog-content section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.blog-img {
+  max-width: 40rem;
+}
+.alignment {
+  margin-top: 1rem;
+}
+.preview-img {
+  margin: 0 auto;
+  height: 12rem;
+}
+.form-wrapper {
+  width: 40%;
+}
+.category {
+  color: dodgerblue;
+  text-align: right;
+  font-weight: 600;
+}
+.category-filter {
+  background-color: #fff;
+  padding: 1rem;
+  border: 0.2rem solid #797474;
+  border-radius: 0.5rem;
+}
+.category-filter p {
+  padding: 1rem;
+}
+.category-filter ul {
+  margin: 0;
+  padding: 0;
+}
+.category-filter ul li {
+  margin: 0.5rem;
+  padding: 0 0.5rem;
+  list-style: none;
+}
+.category-filter ul li:last-child {
+  border-top: 0.1rem solid #797474;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+.category-filter ul li a {
+  display: flex;
+  padding: 0.5rem;
+  border: 0.1rem solid #797474;
+  border-radius: 0.25rem;
+  color: #797474;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.category-filter ul li a:hover {
+  color: #fff;
+  background-color: dodgerblue;
+}
+.active {
+  color: #fff !important;
+  background-color: dodgerblue;
+}
+.blog-list-icon:hover {
+  transform: scale(1.2);
+}
+
+/********** FLOATING **********/
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.img-fleft {
+  float: left;
+  margin: 0 1.5rem 1.5rem 0;
+}
+.img-fright {
+  float: right;
+  margin: 0 0 1.5rem 1.5rem;
+}
+.clearer {
+  clear: both;
+  width: 0px;
+  height: 0px;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.w-50 {
+  width: 45%;
+}
+
+/********** AVATAR IMAGE **********/
+img.avatar {
+  width: 150px;
+  height: 150px;
+  margin: 15px 15px 15px 0;
+  border: 1px solid lightgray;
+  padding: 5px;
+}
+
+/********** USER MESSAGES STYLES **********/
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}
+.info {
+  color: darkorange;
+}
+.marker {
+  color: darkred;
+  font-size: 1.1em;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+/********** SPECIAL POPUP MESSAGES STYLES **********/
+popupBox {
+  border: 1px solid darkorange;
+  box-shadow: 20px 10px 25px 0px rgba(51, 51, 51, 0.5);
+  border-radius: 10px;
+  background-color: rgba(230, 230, 230, 0.9);
+  width: 50%;
+  text-align: center;
+  color: #666;
+  padding: 25px;
+  position: absolute;
+  margin: auto;
+  /* 1left: 25%; */
+  /* 1top: 40%; */
+}
+
+popupBox h3 {
+  color: black;
+}
+
+popupBox p {
+  color: black;
+}
+
+popupBox a {
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+popupBox a:hover,
+popupBox a.button:hover {
+  background-color: rgba(255, 140, 0, 0.3);
+}
+popupBox a.button {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid gray;
+  color: gray;
+}
+popupBox a.button:hover {
+  color: black;
+  cursor: pointer;
+}

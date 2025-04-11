@@ -1,0 +1,496 @@
+/* Allgemeine Stile */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: #333;
+  color: #333;
+  line-height: 1.6;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Layout mit Sidebar */
+.container {
+  display: flex;
+  /* max-width: 1200px; */
+  width: 100%;
+  /* gap: 20px; */
+  justify-content: space-between;
+}
+
+main {
+  flex: 2;
+  background: #fff;
+  margin-right: 1.5rem;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+aside {
+  flex: 1;
+  width: 30%;
+  background: #333;
+}
+.sidebar section {
+  margin-bottom: 1.5rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+.sidebar section:last-child {
+  margin-bottom: 0;
+}
+.sidebar h2 {
+  margin-top: 0;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  background: #fff;
+  color: #333;
+  margin-bottom: 1.5rem;
+  padding: 12px 20px;
+  border-radius: 8px;
+  width: 100%;
+}
+header h1 {
+  margin: 0 0 0 1rem;
+  font-size: 1.5rem;
+}
+.menu {
+  justify-content: right;
+}
+.menu a {
+  width: 10rem;
+  background: #0288d1;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background: #026ba1;
+}
+.page-title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.login-form,
+.menu {
+  display: flex;
+  width: fit-content;
+  gap: 6px;
+}
+
+.login-form .login-btn {
+  margin-top: 0;
+}
+.logo {
+  height: 2rem;
+  width: auto;
+}
+/* Hauptüberschrift */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 20px 0 0;
+}
+
+/* Formularbereich */
+.form-wrapper {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset fieldset {
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 400px;
+}
+
+select {
+  width: fit-content;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  width: 50%;
+  cursor: pointer;
+}
+
+input[type="submit"],
+.button {
+  width: fit-content;
+  background: #0288d1;
+  color: #fff;
+  border: none;
+  margin-top: 1rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover,
+.button:hover {
+  background: #026ba1;
+}
+.registration-page input {
+  width: 95%;
+}
+.registration-page input[type="password"] {
+  margin-top: 1rem;
+}
+.button {
+  border-radius: 5px;
+}
+
+/* Tabelle Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #0288d1;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #dee;
+}
+
+/* Icons Styling */
+.blog-list-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.new-blog-form section {
+  display: flex;
+  gap: 1rem;
+}
+.new-blog-form article {
+  width: 50%;
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+}
+.user-data section {
+  display: flex;
+  margin: 1rem 0 0;
+  padding: 0;
+  gap: 1rem;
+}
+.user-data section label {
+  margin-top: 0;
+}
+.user-data section article {
+  flex-grow: 1;
+}
+
+/********** USER MESSAGES STYLES **********/
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}
+.info {
+  color: darkorange;
+}
+.marker {
+  color: darkred;
+  font-size: 1.1em;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+/********** SPECIAL POPUP MESSAGES STYLES **********/
+popupBox {
+  border: 1px solid #0288d1;
+  box-shadow: 20px 10px 25px 0px rgba(51, 51, 51, 0.5);
+  border-radius: 10px;
+  background-color: rgba(230, 230, 230, 0.9);
+  width: 50%;
+  text-align: center;
+  color: #666;
+  padding: 25px;
+  position: absolute;
+  margin: auto;
+}
+
+popupBox h3 {
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+popupBox p {
+  color: black;
+}
+
+.blog-content {
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 0.2rem solid #797474;
+  border-radius: 0.5rem;
+}
+.blog-post {
+  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  border-bottom: 0.2rem dotted #797474;
+}
+.blog-content section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.blog-img {
+  max-width: 40rem;
+}
+.alignment {
+  margin-top: 1rem;
+}
+.preview-img {
+  margin: 0 auto;
+  height: 12rem;
+}
+.form-wrapper {
+  width: 40%;
+}
+.category {
+  color: dodgerblue;
+  text-align: right;
+  font-weight: 600;
+}
+.category-filter {
+  max-width: 11.5%;
+  height: fit-content;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.category-filter p {
+  padding: 1rem;
+}
+.category-filter ul {
+  margin: 0;
+  padding: 0;
+}
+.category-filter ul li {
+  margin: 0.75rem 0;
+  list-style: none;
+}
+.category-filter ul li:first-child {
+  margin-top: 0;
+}
+.filter-reset {
+  border-top: 0.1rem solid #797474;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding-top: 1.5rem;
+}
+.category-filter ul li a,
+.filter-reset a {
+  display: flex;
+  padding: 0.5rem;
+  border: 0.1rem solid #797474;
+  border-radius: 0.25rem;
+  color: #797474;
+  justify-content: center;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.category-filter ul li a:hover,
+.filter-reset a:hover {
+  color: #fff;
+  background-color: dodgerblue;
+}
+.active {
+  color: #fff !important;
+  background-color: dodgerblue;
+}
+.blog-list-icon:hover {
+  transform: scale(1.2);
+}
+
+.img-fleft {
+  float: left;
+  margin: 0 1.5rem 1.5rem 0;
+}
+.img-fright {
+  float: right;
+  margin: 0 0 1.5rem 1.5rem;
+}
+
+/*****************/
+/* media queries */
+/*****************/
+
+@media (max-width: 1025px) {
+  .container {
+    flex-direction: column;
+  }
+  main {
+    margin-right: 0;
+  }
+  aside {
+    width: 100%;
+  }
+  .category-filter {
+    max-width: unset;
+    margin-bottom: 1.5rem;
+    order: -1;
+  }
+  .category-filter ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .category-filter ul li {
+    width: 15rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    padding: 0.75rem;
+  }
+  header {
+    flex-direction: column;
+  }
+  .page-title {
+    width: fit-content;
+    margin: 0.5rem auto;
+  }
+  header h1 {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .menu {
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0.5rem auto 0;
+  }
+  .menu a {
+    margin-left: 0;
+  }
+  .container {
+    flex-direction: column;
+  }
+  main {
+    margin-right: 0;
+    padding: 0.75rem;
+  }
+  .blog-content {
+    padding: 0.75rem;
+  }
+  .blog-img {
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
+  aside {
+    width: 100%;
+  }
+  .new-category {
+    margin-top: 1.5rem;
+  }
+  .category-filter {
+    max-width: unset;
+    margin-bottom: 1.5rem;
+    order: -1;
+  }
+  .category-filter ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .category-filter ul li {
+    width: 10rem;
+    margin: 0;
+  }
+  .user-blogposts {
+    overflow-x: auto;
+  }
+  th,
+  td {
+    padding: 0.5rem;
+  }
+  /* th:nth-child(3),
+  td:nth-child(3) {
+    display: none;
+  } */
+}
